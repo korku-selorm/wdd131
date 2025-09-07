@@ -107,6 +107,8 @@ hr {
 .card img {
     width: 200px;
     height: 155px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #89a2ce;
 }
 
 
