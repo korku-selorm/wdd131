@@ -101,7 +101,7 @@ hr {
     color: #d7e1ea;
     font-size: 1.5rem;
     padding: 5px 0;
-    border-radius: 5px;
+    border-radius: 5px 5px 0 0;
 }
 
 .card img {
@@ -133,7 +133,7 @@ hr {
     color: #ebf2f8;
     font-size: 1.5rem;
     padding: 5px 0;
-    border-radius: 5px;
+    border-radius: 5px 5px 0 0;
 }
 
 .right-col ul {
