@@ -120,7 +120,7 @@ hr {
 }
 
 .right-col {
-    height: fit-content;
+    height: 100%;
     background-color: #d2f1f4;
     border-radius: 15px;
     overflow: hidden;
