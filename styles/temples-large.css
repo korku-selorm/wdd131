@@ -47,13 +47,9 @@
         max-width: 100%;
         box-shadow: none;
     }
+
     .temple-gallery img:hover {
         box-shadow: 5px 8px 10px var(--color-secondary);
     }
 
-    footer {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
 }
