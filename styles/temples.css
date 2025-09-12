@@ -1,0 +1,165 @@
+:root {
+    /* Primary coorrs */
+    --color-primary: #2c3e50;
+    --color-secondary: #294663;
+    --color-accent: #7b2c2c;
+
+    /* Background color */
+
+    --color-background: #fdfaf6;
+
+    /* Text colors */
+    --color-text-main: #1c1c1c;
+    --color-text-muted: #6e6e6e;
+    --font-style: 'Roboto';
+    --color-alternative: #fdfaf6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-background);
+    font-family: var(--font-style);
+    height: 100vh;
+}
+
+header {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-primary);
+    color: var(--color-alternative);
+    max-width: 100%;
+}
+
+header h1 {
+    /* margin-left: 1rem; */
+    padding: 20px;
+}
+
+nav {
+    background-color: var(--color-secondary);
+    width: 100%;
+}
+
+.navigation {
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    width: 100%;
+}
+
+.navigation a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: var(--color-alternative);
+    padding: 12px;
+    text-align: center;
+}
+
+.navigation a:hover {
+    background-color: var(--color-text-muted);
+}
+
+
+/* Responsive humburger */
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    color: var(--color-alternative);
+    position: absolute;
+    top: 0.7rem;
+    right: 1rem;
+    background: none;
+    cursor: pointer;
+    padding: 20px 0;
+}
+
+#menu:before {
+    content: '☰';
+}
+
+#menu.open::before {
+    content: "✖";
+}
+
+/* display the content of the nav whn clicked */
+
+/* Show navigation when open on small screens */
+.navigation.open {
+    display: flex;
+    flex-direction: column;
+}
+
+.active::before {
+    content: "📍";
+    /* just a wayfinding symbol for the user */
+}
+
+/* main styling */
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 1rem;
+}
+
+main h1 {
+    text-align: center;
+}
+
+.temple-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    justify-items: center;
+}
+
+.temple-gallery figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+
+}
+
+/* template image sizing */
+.temple-gallery img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+    box-shadow: 5px 8px 10px var(--color-secondary);
+
+}
+
+.temple-gallery figcaption {
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--color-primary);
+    color: #ebf2f8;
+    padding: 1rem;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+}
