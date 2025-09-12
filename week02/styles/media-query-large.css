@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto';
+    height: 100vh;
+}
+
+header, main, footer {
+    max-width: 1200px;
+    margin: 1.2rem auto;
+    border: 1px solid #326f9a42;
+    background-color: #aeddff;
+    border-radius: 15px;
+}
+
+header {
+    padding: 20px;
+    font-size: 1.5rem;
+    background-color: black; /* override */
+    color: white; /* override */
+    text-align: left;
+}
+
+section {
+    background-color: whitesmoke;
+    margin: 20px auto;
+    padding: 15px;
+    box-shadow: 5px 5px 10px rgb(115, 106, 106);
+    max-width: 500px;
+    border-radius: 15px;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+p {
+    font-size: 1.3rem;
+    padding: 15px 0;
+    margin: 20px 0;
+}
+
+footer {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 15px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
