@@ -119,8 +119,10 @@ main {
     gap: 1rem;
 }
 
-main h1 {
+main h2 {
     text-align: center;
+    font-size: 1.8rem;
+    margin-top: 1rem;
 }
 
 .temple-gallery {
